@@ -1,0 +1,38 @@
+---
+title: "Paper"
+author: "Abhishek Dharwadkar"
+date: "November 2, 2016"
+output: 
+  html_document:
+    keep_md: TRUE
+---
+
+```{r setup}
+opts_chunk$set(root.dir = "C:\\Data Science\\SMU\\Semester1\\Doing Data Science\\Case Study 1")
+```
+
+## Introduction
+
+In this study we look at the GDP and Educational Statistic data and does analysis on this data.
+
+
+# Clean the GDP data
+
+```{r}
+source("./Data/clean_gdp.R")
+```
+
+# Clean the Edstats data
+```{r}
+source("./Data/clean_edstats.R")
+```
+
+# Merge the GDP and EDSTATS data
+```{r}
+source("./Data/merge_gdp_edstats.R")
+```
+
+# Analyze the merged data
+```{r}
+source("./Data/analysis.R")
+```
